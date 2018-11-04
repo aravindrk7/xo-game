@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"></script>
+    <script src="../p5.min.js"></script>
+    <script src="tic_ai.js"></script>
+    <script src="ai.js"></script>
+    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\p5-js\style.css">
+    <style>
+      body
+      {
+        padding: 20; 
+        margin: 20;
+        color:white;
+        background-color:black;
+      }
+      p
+      { 
+        font-size: 40px;
+        font-family:Georgia;
+      }
+      button{
+        border-radius: 20px;
+        height: 60px;
+        width: 160px;
+        font-size: 15px;
+        font-family: Georgia;
+        background-image:linear-gradient(green,lightgreen);
+      }
+      button:hover{
+        background-image:linear-gradient(blue,lightblue);
+      }
+      button:focus{
+
+        background-image:linear-gradient(blue,lightblue);
+        
+      }
+    </style>
+   </head>
+   <body>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="C:\xampp\htdocs\p5-js\index.html"> &#127968 Home</a></li>
+        <li><a>&#x1F6b6 About me</a>
+          <ul>
+            <li><a>College</a></li>
+            <li><a>Hobbies</a></li>
+            <li><a href="C:\xampp\htdocs\p5-js\resume.html">My Resume</a></li>
+          </ul>
+        </li>
+        <li><a>&#127918 Games</a>
+          <ul>
+            <li><a href="C:\xampp\htdocs\p5-js\mine/index.html">Minesweeper</a></li>
+            <li><a href="C:\xampp\htdocs\p5-js\snake/first.html">Snake</a></li>
+            <li><a href="C:\xampp\htdocs\p5-js\xo game/index.html">Tic Tac Toe</a></li>
+          </ul>
+        </li>
+        <li><a>&#128383 contact</a>
+          <ul>
+            <li>&#128385 9489103429</li>
+            <li id="lit">&#9993 aravindark30@gmail.com</li>
+          </ul>
+        </li>
+        <li><a id="ex">&#9771&nbsp&nbsp&nbspAravind R&nbsp&nbsp&nbsp&nbsp</a></li>
+      </ul>
+    </div>
+    <br><br>
+   <script>
+   function reg(){
+      var ran=random(0,1000);
+      var player1=prompt("Enter player1 name","here");
+      document.getElementById("play1").innerHTML=player1;
+    }
+    </script>
+   <p id="play1">PLAYER 1</p><p id="counter1" class="cout1">hi</p>
+   <p id="play2">Computer</p><p id="counter2" class="cout2">hi</p>
+   <button onclick="reg();">Enter your name</button>
+
+   </body>
+</html>
