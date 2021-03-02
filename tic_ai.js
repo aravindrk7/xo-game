@@ -12,7 +12,9 @@ var ranj;
 function setup()
 {
 	canvas = createCanvas(421,421);
-	canvas.position(450,100);
+	var x = (windowWidth - 421) / 2;
+	var y = (windowHeight - 421) / 2;
+	canvas.position(x,y);
 	grid = arr();
 	//grid =new block(40,40,40);
 	for(var i = 0;i < 3;i++)
@@ -23,7 +25,7 @@ function setup()
 		}
 	}
 	var button=createButton("NEW GAME");
-	button.position(585,540);
+	button.position(0,550);
 	button.mousePressed(newgame);
 	counter1 = select('#counter1');
 	counter2 = select('#counter2');
